@@ -15,3 +15,14 @@ Include the improved test code in this file.
 
 ## Answer
 
+We chose the rule `JUnit4TestShouldUseBeforeAnnotation` and run it on the project Apache Commons Math.
+
+```./run.sh pmd -d /home/tbauquin/Téléchargements/commons-math3-3.6.1-src/src/main/java -R category/java/bestpractices.xml/JUnit4TestShouldUseBeforeAnnotation -f text > sortie2.txt
+```
+
+We obtain : 
+
+```/home/tbauquin/Téléchargements/commons-math3-3.6.1-src/src/main/java/org/apache/commons/math3/optimization/direct/BaseAbstractMultivariateVectorOptimizer.java:319:	JUnit4TestShouldUseBeforeAnnotation:	JUnit 4 tests that set up tests should use the @Before annotation, JUnit5 tests should use @BeforeEach or @BeforeAll
+/home/tbauquin/Téléchargements/commons-math3-3.6.1-src/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java:503:	JUnit4TestShouldUseBeforeAnnotation:	JUnit 4 tests that set up tests should use the @Before annotation, JUnit5 tests should use @BeforeEach or @BeforeAll
+```
+It is working really well !
