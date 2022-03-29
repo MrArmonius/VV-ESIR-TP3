@@ -34,7 +34,8 @@ Include the improved test code in this file.
 
 We chose the rule `JUnit4TestShouldUseBeforeAnnotation` and run it on the project Apache Commons Math.
 
-```./run.sh pmd -d /home/tbauquin/Téléchargements/commons-math3-3.6.1-src/src/main/java -R category/java/bestpractices.xml/JUnit4TestShouldUseBeforeAnnotation -f text > sortie2.txt
+```.
+/run.sh pmd -d /home/tbauquin/Téléchargements/commons-math3-3.6.1-src/src/main/java -R category/java/bestpractices.xml/JUnit4TestShouldUseBeforeAnnotation -f text > sortie2.txt
 ```
 
 We obtain : 
