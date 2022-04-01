@@ -28,4 +28,4 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 1. 
 |Caractéristiques |Blocks |
 |:----------------|:------|
-|Bonjour |Comment ça va ? | Tetsoutille |
+|Bonjour |Comment ça va ? |Tetsoutille |
