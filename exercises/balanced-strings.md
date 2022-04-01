@@ -25,7 +25,7 @@ Write below the actions you took on each step and the results you obtained.
 Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to complete this exercise.
 
 ## Answer
-1. 
-|Caractéristiques |Blocks |
-|:----------------|:------|
-|Bonjour |Comment ça va ? |Tetsoutille |
+1. We have 3 characteristics, these are `[]`, `{}` and `()`. We have one block for each characteristics where they are alone. For example we have block one where we test only the `[]` and can be `[[]]` or `][][`. The first one is right but the last is false. We have one more block for combinaison of characteristics, `[{()}]`.
+2. We used the librairy Jacoco to know the statement coverage of our function.
+3. 85
+4. [Pit plugin maven](https://pitest.org/quickstart/maven/)
