@@ -26,6 +26,6 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 1. 
-|Test |Coucou|
-|:----|:-----|
-|Bonjour |Comment ça va ? |
+|Caractéristiques |Blocks |
+|:----------------|:------|
+|Bonjour |Comment ça va ? | Tetsoutille |
