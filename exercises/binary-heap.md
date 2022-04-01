@@ -40,3 +40,6 @@ Use the following steps to design the test suite:
 Use the project in [tp3-heap](../code/tp3-heap) to complete this exercise.
 
 ## Answer
+1. For the constructor, there is only one characteristic. Which is `Comparator<T> comparator`, this method can't be tested alone. The characteristic is common with the methods pop and peek. Moreover the method `push` has the characteristic `T element` which is also common with the methods pop and peek and the constructor.`count()` has the characteristics "number of time we call push - number of time we call pop" because each time we call push, we increase by 1 and for pop we decrease by 1 if the heap isn't empty.
+So for `count`, we have when the heap is empty, when we call pop/peek when the hep is empty, when we call only push several times and when we call push and pop/peek several time.
+So for `pop` and `peek` we have to test with the element `Comparator<T> comparator`, when we call pop/peek when the hep is empty,
