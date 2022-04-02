@@ -72,7 +72,8 @@ We can see than we have *only* 95% for the branchs coverage. The resaon behind t
 ![image](images/jacoco_details_BalancedString.png)
 3. 
 4. The Pit plugin was already in the `pom.xml`. So to have the report from **PIT** we just need to run `sudo mvn test-compile org.pitest:pitest-maven:mutationCoverage`. After this command, we can found the report in the folder *Target*. We obtain this:
-![image](images/Pit_BalancedString)
+![image](images/Pit_BalancedString.png)
+We have 100% on mutation coverage.
 
 
 [Pit plugin maven](https://pitest.org/quickstart/maven/)
