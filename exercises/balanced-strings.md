@@ -25,4 +25,8 @@ Write below the actions you took on each step and the results you obtained.
 Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to complete this exercise.
 
 ## Answer
-
+1. First, we have the empty String test where the function must return True. Then, we have 3 characteristics, these are `[]`, `{}` and `()`. We have one block for each characteristics where they are alone. For example we have block one where we test only the `[]` and `][`. The first one is right but the last is false, moreover the last example test also when the first symbol is a close symbol. Furthermore, we have one more block for combinaison of characteristics, `[{()}]` and his false version `[{{()}]`. And the final version is when we have the same number of closed and opened symbo but the result is false, `([)]`.
+2. We used the librairy Jacoco to know the statement coverage of our function. We obtain a 100% coverage:
+![image](images/jacoco_BalancedString.png)
+4. 85
+5. [Pit plugin maven](https://pitest.org/quickstart/maven/)
