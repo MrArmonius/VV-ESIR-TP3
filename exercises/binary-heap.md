@@ -45,7 +45,7 @@ So for `count`, we have when the heap is empty, when we call pop/peek when the h
 So for `pop` and `peek` we have to test with the element `Comparator<T> comparator`, when we call pop/peek when the hep is empty, when we have only one element, when we have several elements.
 2. We run the agent of jacoco, and we obtain 100% on both metrics.
 
-![image](images/jacoco_Heap.png)
+![image](images/jacoco_BinaryHeap.png)
 
 3. In the test coverage we don't have a test which comports two boolean operation. Each test evaluate one block of our input space partition.
 4. For the PIT we have also 100% on the both metrics. Indeed, every lines and branchs of the class is executed while we run the tests.
