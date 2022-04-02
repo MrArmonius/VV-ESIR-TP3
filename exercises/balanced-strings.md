@@ -67,15 +67,22 @@ public static boolean isBalanced(String str) {
     2. `sudo mvn jacoco:prepare-agent` we prepare the data for the jacoco's report
     3. `sudo mvn jacoco:report` we create the report 
 We obtain a 100% coverage:
+
 ![image](images/jacoco_BalancedString.png)
 
+
 We can see than we have *only* 95% for the branchs coverage. The resaon behind this number is the `switch`, my tests never reach the default case but always one of three declared cases. We can't create test for this branch because we have the prior `if` that works as filter. Like we can see on this image:
+
 ![image](images/jacoco_details_BalancedString.png)
-3. 
+
+
+
 4. The Pit plugin was already in the `pom.xml`. So to have the report from **PIT** we just need to run `sudo mvn test-compile org.pitest:pitest-maven:mutationCoverage`. After this command, we can found the report in the folder *Target*. We obtain this:
+
 ![image](images/Pit_BalancedString.png)
 
 We have 100% on mutation coverage. The 95% in line coverage is due to the constructor `private StringUtils()` that we don't test. Like you can see on the image below:
+
 ![image](images/Pit_details_BalancedString.png)
 
 
